@@ -1,0 +1,166 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>《Exchange 打不开了》 | 一顿一顿地吃</title><meta name="author" content="Jia"><meta name="copyright" content="Jia"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#1c2423"><meta name="description" content="北京时间十一月十三号凌晨，两点不到，Microsoft 365 出了问题。那时候美国东部是十二号中午，快一点钟，那边的人刚吃过午饭，苏州这边的人还在睡觉。 先坏的是 Exchange Online，也就是 Outlook 背后的那些邮箱。一开始说是美洲的用户连不上，后来 Teams、SharePoint、Copilot、Defender XDR 也跟着出了毛病。 北京时间两点半前后，Downdet">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《Exchange 打不开了》">
+<meta property="og:url" content="https://princejia.github.io/2026/11/13/m365-outage/index.html">
+<meta property="og:site_name" content="一顿一顿地吃">
+<meta property="og:description" content="北京时间十一月十三号凌晨，两点不到，Microsoft 365 出了问题。那时候美国东部是十二号中午，快一点钟，那边的人刚吃过午饭，苏州这边的人还在睡觉。 先坏的是 Exchange Online，也就是 Outlook 背后的那些邮箱。一开始说是美洲的用户连不上，后来 Teams、SharePoint、Copilot、Defender XDR 也跟着出了毛病。 北京时间两点半前后，Downdet">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://princejia.github.io/img/avatar.png">
+<meta property="article:published_time" content="2026-11-12T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-11-13T06:30:00.000Z">
+<meta property="article:author" content="Jia">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://princejia.github.io/img/avatar.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "《Exchange 打不开了》",
+  "url": "https://princejia.github.io/2026/11/13/m365-outage/",
+  "image": "https://princejia.github.io/img/avatar.png",
+  "datePublished": "2026-11-12T16:00:00.000Z",
+  "dateModified": "2026-11-13T06:30:00.000Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Jia",
+      "url": "https://princejia.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://princejia.github.io/2026/11/13/m365-outage/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '《Exchange 打不开了》',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'post'
+}</script><link rel="preload" href="/fonts/wordmark.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/eb-garamond-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/css/custom.css"><meta name="generator" content="Hexo 8.1.2"></head><body><div class="bg-animation" id="web_bg" style="background-color: #1c2423;"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><span> 文章</span></a></div></div></div></div><div class="post" id="body-wrap"><div class="stage-photos"><figure class="stage-photo is-current" data-stage="hero" data-caption="平江路，石拱桥"><img src="/img/banner.jpg" width="1600" height="1154" alt="苏州平江路的石拱桥和河边的白墙人家" fetchpriority="high"></figure><p class="stage-caption" id="stage-caption">平江路，石拱桥</p></div><header class="post-bg" id="page-header" style="background-image: url(/img/banner.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><span> 文章</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">《Exchange 打不开了》</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-11-12T16:00:00.000Z" title="发表于 2026-11-13 00:00:00">2026-11-13</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-11-13T06:30:00.000Z" title="更新于 2026-11-13 14:30:00">2026-11-13</time></span></div><span class="stage-stats">阅读 <span id="vercount_value_page_pv">…</span> 次</span><div class="meta-secondline"></div></div></div></header><main class="layout hide-aside" id="content-inner"><div id="post"><article class="container post-content" id="article-container">
+<p>北京时间十一月十三号凌晨，两点不到，Microsoft 365 出了问题。那时候美国东部是十二号中午，快一点钟，那边的人刚吃过午饭，苏州这边的人还在睡觉。</p>
+<p>先坏的是 Exchange Online，也就是 Outlook 背后的那些邮箱。一开始说是美洲的用户连不上，后来 Teams、SharePoint、Copilot、Defender XDR 也跟着出了毛病。</p>
+<p>北京时间两点半前后，Downdetector 上说 Outlook 有问题的报告有十三万多条，说 Microsoft 365 的有四万六千多条，说 Teams 的三千来条。到三点零七分，Outlook 的报告还有九万七千多条。路透社在报道里提醒，这些都是网友自己点的，真正受影响的人有多少，不一定是这个数。</p>
+<p><img src="/img/posts/m365-outage.jpg" alt="IT 管理员趴在桌上，身后屏幕显示 Microsoft 365 Exchange Online Service Disruption，Investigating" loading="lazy"></p>
+<p>这张图画的就是这样一夜。屏幕是红的，上面写着 Investigating，下面一行小字说正在尽快恢复服务。杯子上写着 IT Admin，咖啡还冒着热气。窗外在下雨，那个人趴在桌上，眼睛还睁着。玻璃上有一行字：Hello darkness, my old friend.</p>
+<hr>
+<p>微软一开始说，好几个区域的基础设施负载升高了。</p>
+<p>听上去像是人太多，挤不进去。后来它说，总的流量并没有涨，是一批服务器突然自己不能用了，剩下的服务器把活接过去，就被压垮了。好比一个车间，来干活的人一个没少，机器坏了一半，剩下的一半转得冒烟。</p>
+<p>服务器为什么不能用？因为它们没通过自动健康检查。健康检查是看一台服务器还能不能接活，检查不过，系统就把它从队伍里拿下来。拿下来的越多，剩下的越累；剩下的越累，越容易检查不过。</p>
+<p>北京时间四点前，微软说在试一个办法，绕开处理健康检查的那个组件，同时在查这些服务器的处理器占用为什么偏高。</p>
+<p>五点，它说换了一种健康检查的办法，一部分服务器回来了，正在铺开，还准备了自动恢复，发现哪台服务器不响应就去重启它。</p>
+<p>早上八点不到，Exchange Online 又更新了一次：有些已经恢复的服务器，流量一回来，又不响应了。微软开始限制一部分流量，还在试用旧版软件配置重新搭起来的服务器。</p>
+<p>上午十点，微软说重启服务器以后情况有些好转，但还要看稳不稳。它又说，有一个负责建立安全连接的进程被压垮了，服务器因此不再处理请求。它开始回滚一项最近的网络配置变更，因为这项变更和故障开始的时间碰在了一起。碰在一起，不等于就是它，回滚有没有用，微软自己也还在看。</p>
+<p>那次更新的时候，Exchange Online 的事件 EX1550543 和 Microsoft 365 的事件 MO1550821 在服务健康面板上都还开着。到我写这篇的下午两点多，还没看到微软宣布完全恢复，根本原因也没有公布。有人问是不是被攻击了，微软到现在没有拿出任何被攻击的证据。</p>
+<hr>
+<p>坏的不只是 Outlook 客户端。Outlook 网页版、MAPI、Exchange ActiveSync、REST API 都可能连不上，所以换个浏览器打开，也不一定有用。有些用 Outlook 收 Google 邮箱的人，也说收不到信了。</p>
+<p>跟着受影响的还有 Teams、SharePoint Online、Copilot、Defender XDR、Planner、To Do，还有 Purview 的几项服务。微软说，这些服务里要跟 Exchange Online 打交道的那部分功能会出问题，不跟它打交道的还能用。</p>
+<hr>
+<p>这种时候，IT 管理员能做的事情不多。重启电脑没有用，重装 Outlook 没有用，清缓存也没有用。毛病不在谁的电脑上，在微软的机房里。</p>
+<p>他能做的，是打开管理中心，盯着那两个编号，一遍一遍地刷新。然后回答同一个问题：</p>
+<p>“邮箱是不是坏了？”</p>
+<p>“是。”</p>
+<p>“什么时候好？”</p>
+<p>“微软说在处理。”</p>
+<p>图上那个人大概就是这么过来的。咖啡还热着，他已经不想喝了。</p>
+<p>图上那句歌词管它叫老朋友。这两个月 Microsoft 365 也确实来过几回：九月十六号，美国有些用户打不开 Microsoft 365；十月五号到六号，有些管理员进不去管理中心；十月十三号，德国那边通过 Global Secure Access 用 Microsoft 365 的人，Outlook、Teams、OneDrive 断了将近十一个小时。不过那几回都只碰到一部分人、一部分功能，没有这回这么大。</p>
+<p>等这回过去了，微软会写一份事后报告，到那时候才知道到底是哪里坏了。现在知道的只有一件事：这一夜很长。</p>
+<hr>
+<p>资料来源：<a href="https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html" target="_blank" rel="noopener">CNBC</a>、<a href="https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams/" target="_blank" rel="noopener">SecurityWeek</a>、<a href="https://windowsforum.com/news/microsoft-365-outage-reaches-bermuda-and-us-outlook-access-disrupted-as-server-recovery-falters-megathread.452093/" target="_blank" rel="noopener">WindowsForum</a>、<a href="https://blog.incidenthub.cloud/2026-10-14-microsoft-365-gsa-outage-oct-13-2026" target="_blank" rel="noopener">IncidentHub</a>。文中时间均为北京时间，截至 2026 年 11 月 13 日下午。</p>
+</article><div class="tag_share"></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2026/11/11/vibe-coding/" title="《给聊天记录找个地方》"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">《给聊天记录找个地方》</div></div><div class="info-2"><div class="info-item-1">上个月我写《十月》，往前翻了很多聊天记录。翻到后来我才知道，Teams 的聊天只保留三个月，三个月一到，它自己就删掉了。删之前不跟你打招呼，删完了也不告诉你，就像有人半夜把你家门口的东西搬走了，第二天你出门，只觉得门口比平时宽了一点。 我起先没怎么在意。那些交易号、截图、早就关掉的 Bug，留着也没人会再看第二遍。可是写完那篇以后，我心里有点舍不得。舍不得的不是那些交易号，是那些日子。 我就想写个小程序，每天把聊天记录往自己电脑上存一份。说是我写，其实我一行代码也没写。现在的人管这个叫 vibe coding，我说要什么，AI 就去写什么。我的活儿是看，看完了点头，或者看完了说”不对”。我坐在那里，像一个坐在田埂上的地主，看着长工在地里干活。 办法是这样的：我自己能在浏览器里看到这些消息，那就让程序也开一个浏览器。我先登录一次，以后它每天在后台打开 Teams，一个聊天一个聊天往上翻，翻到哪里，就把浏览器收到的消息抄到哪里。别人的东西它不碰，它只抄我本来就看得见的。 AI 先写了一份设计文档，写得很长。我看完以后对它说： “实现一下。” 它就去实现了。 写完以后，它自己拿我的账号试着跑...</div></div></div></a></nav></div></main><footer id="footer"><div class="footer-other"><span class="stage-stats">本站共被阅读 <span id="vercount_value_site_pv">…</span> 次，来过 <span id="vercount_value_site_uv">…</span> 位读者</span><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By Jia</span></div><div class="footer_custom_text">图片均来自 Wikimedia Commons，经裁剪调色：<a href="https://commons.wikimedia.org/wiki/File:A_stone_arch_bridge_in_Pingjiang_Road,_Suzhou.jpg" target="_blank" rel="noopener">平江路石拱桥</a> kevinmcgill，<a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener">CC BY-SA 2.0</a>；<a href="https://commons.wikimedia.org/wiki/File:Yangcheng_Lake_scenery.JPG" target="_blank" rel="noopener">阳澄湖</a> Makecat、<a href="https://commons.wikimedia.org/wiki/File:%E6%97%A0%E9%94%A1%E9%98%B3%E5%B1%B1%E6%B0%B4%E8%9C%9C%E6%A1%83_2.jpg" target="_blank" rel="noopener">无锡阳山水蜜桃</a> Walter Grassroot，<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>；<a href="https://commons.wikimedia.org/wiki/File:Suzhou_2006_09-57.jpg" target="_blank" rel="noopener">园林月洞门</a> G41rn8、<a href="https://commons.wikimedia.org/wiki/File:%E6%B1%9F%E5%8D%97%E5%A4%9C%E5%B8%82%E8%A1%8C.jpg" target="_blank" rel="noopener">山塘街夜景</a> Wjyy1212，<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>。</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><div class="js-pjax"></div><script src="/js/stage.js" defer></script><script src="https://events.vercount.one/js" defer></script></div></body></html>
