@@ -319,6 +319,11 @@ figcaption {
   grid-column: 7 / 13;
 }
 
+/* A lead essay without a picture takes the photo's columns too. */
+.index__lead--text .index__body {
+  grid-column: 1 / 10;
+}
+
 .index__title--lead {
   margin-top: var(--space-sm);
   font-size: var(--text-3xl);
@@ -880,6 +885,7 @@ figcaption {
   }
 
   .index__lead > *,
+  .index__lead--text .index__body,
   .index__row > *,
   .shiling__grid > *,
   .letter__grid > *,
