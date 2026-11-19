@@ -1,38 +1,32 @@
-/* Hallmark · shape: Index-First (draw 78093e; swapped from Conversational FAQ, the blog has no questions and its essays are the reason to come) · genre: editorial · theme: Newsprint (deal 3/3, seed light-personal-essay-blog-1da0·e3d0ab30·2026-11-13·r0) · redesign: full
- * hero: Stage (/), Banner (/2026/*, /archives/) · Stage swapped from Counter, the Pingjiang photograph is the site's strongest material · nav: edge-aligned · footer: mast · imagery: photographs, the user's 2 in mono and the post illustration in its own colour · signature: the wordmark 一顿一顿地吃 set as a newspaper mast over the footer
- * axes: light/slab-serif/warm · posture: restrained · contrast: pass · fold: pass · job: listen (read the latest essay) · draw: 78093e · v2.0.0 */
-/* Hallmark · pre-emit critique: P4 H4 E4 S5 R4 V4 · weakest: P, a blog front page argues little; the month picker and the Suzhou dateline carry what only this site could say */
-/* Hallmark · dropped /js/main.js, /js/utils.js, #sidebar, #rightside · Butterfly's runtime for the hidden sidebar menu, side buttons and the nav it hid on scroll; none of that chrome is left */
-/* Hallmark · dropped /tags/, /categories/ · the hidden sidebar linked these, and the site has no such pages */
-/* Hallmark · dropped lake.jpg, garden.jpg, night.jpg, friend_404.gif, the stage photograph on posts and archives · Newsprint prints fewer, larger photographs, and every post wore the same Pingjiang picture */
-/* Hallmark · dropped Yangcheng_Lake_scenery.JPG, Suzhou_2006_09-57.jpg, %E6%B1%9F%E5%8D%97%E5%A4%9C%E5%B8%82%E8%A1%8C.jpg, licenses/by-sa/4.0 · the footer credits only the photographs this site still shows */
-/* Hallmark · reworded "全部文章 - 4" to "全部文章，共 4 篇。" · 63 names a WORD - fragment label */
-/* Hallmark · reworded "一顿一顿地吃" to "饭一顿一顿地吃，日子一天一天地过。" · the name moved to the nav and footer mast, the site's own line became the h1 */
-/* Hallmark · reworded the essay excerpts to each essay's opening sentences · 58 and 73 named the clamped full text hidden under the next section */
-/* Hallmark · dropped #blog-info, #body-wrap, #go-up, #menu-mask, #menus, #readmode, #rightside-config, #toggle-menu, the sidebar's 文章 4 标签 0 分类 0 counts · Butterfly chrome; 回到顶部 now sits in the footer links */
-/* Hallmark · waive 44c · Banner on posts and archives, the title over the essay or the list · a reader opens an essay to read it, so the essay starts on the first screen */
-/* Hallmark · dismissed 77 · the home page is the whole site: four essays, the 时令 picker and the letter; a post is one long essay, an archive one list */
-/* Hallmark · dismissed 44a · the home hero is centred in its own screen; the space under its caption is the 120px section gap before 文章 */
-/* Hallmark · hero-review: fix · 5 findings · 4 resolved 1 partial (no dateline: the site has no fact for one) · finish-review: subagent · 8 findings · 7 resolved 1 dismissed (44a) · gap: the page reads front-page in its rules and the 时令 band, quieter above the fold */
+/* Hallmark · shape: Hanging scrolls (a misty first screen with the line set top to bottom, the essays hung right to left as vertical scrolls, the twelve months as bamboo slips, the letter set as a vertical note) · genre: editorial · theme: custom · redesign: full · job: listen (read the latest essay) · idea: "a whitewashed Suzhou wall on a rainy afternoon, the essays hung on it as vertical scrolls read from the right" · vibe: "江南烟雨, whitewash, dai ink, mist, quiet"
+ * paper: oklch(95.6% 0.006 235), the cool whitewash of a garden wall in rain, not cream · ink: oklch(23% 0.014 252), 黛, the blue black of wet roof tiles · accent: oklch(46% 0.12 212), 石青, held to links, focus and the active month · display: LXGW WenKai Screen, a kai hand for heads, the wordmark and every vertical line · body: Noto Serif SC, kept from the old site for reading · hero: a misted photograph of Pingjiang beside the site's own line set vertically, right to left, with the intro as a small inscription column · nav: the two links at the left, the wordmark at the right edge like a title slip, one hairline under · footer: a colophon, the links, counts and credits beside the wordmark set as one vertical column · imagery: photographs, the user's 2 in a cool mist (desaturated, a paper veil, fog rising from the foot), the post illustration in its own colour · signature: 饭一顿一顿地吃，日子一天一天地过。 set top to bottom beside a rain-washed Pingjiang
+ * axes: light/handwritten/cool · posture: restrained · contrast: pass · fold: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P4 H4 E4 S5 R4 V5 · weakest: E, vertical type is new ground for the gates; every vertical block turns horizontal under 48rem and the scroll row scrolls inside itself, never the page */
+/* Hallmark · hero-review: fix · 5 findings · 4 resolved 1 partial (the photograph still sits left of the line, now with the action as a slip read after it) · finish-review: subagent · 7 findings · 6 resolved 1 partial (Latin words inside the vertical excerpts lie on their side, as vertical Chinese sets them) · gap: the essay body stays a horizontal reading column, the title hung beside it */
+/* Hallmark · moved header#page-header into the main grid on posts and archives · the title hangs as a slip beside the essay or the list; every id, link and heading is unchanged */
+/* Hallmark · dropped m365-outage.jpg from the index, the lead row and its picture · the essays hang as scrolls of words, newest at the right; the picture stays in its essay */
+/* Hallmark · dropped /fonts/wordmark.woff2 and Zilla Slab · the wordmark and the heads take the kai face; the file stays in the repo unused */
+/* Hallmark · dropped the drop cap on the first paragraph of each essay · a Latin newspaper device; the kai title carries the opening now */
+/* Hallmark · dropped the index__lead, index__row and index__excerpt classes on the home page · the essays became li.scroll with the same links, titles, excerpts and dates */
+/* Hallmark · waive 39b · the month buttons stand 240px tall and 70px wide · each month is a bamboo slip set top to bottom, so the slip is the control and its hit target clears 44px both ways */
+/* Hallmark · waive 49b · three archive titles wrap to two lines at 320px · titles like 《给聊天记录找个地方》 are the essays' own names and cannot shorten */
+/* Hallmark · dismissed F4 · the dark month slip is the pressed state of a toggle, not a second primary action; 读最新一篇 is the page's one filled button */
+/* Hallmark · dismissed F17 · the scroll excerpts are set top to bottom, so 84px is the width of three vertical lines of 24 characters each, not a squeezed column */
+/* Hallmark · waive 77 · 写的人 spans 56% of the container at 1440 · the note is set top to bottom, so its width is its line count, and it hangs beside the peach scroll with the wall around it */
+/* Hallmark · waive 79 · the post and archive heads end at y 437 and y 435 · they are title slips hung in the right margin, and the essay or the list beside them starts at y 140 and fills the screen */
+/* Hallmark · dismissed 77 · a post is one essay and its comments, an archive one list; neither is a landing page that wants six sections */
 @import url("./tokens.css");
 @import url("./base.css");
 
-@font-face {
-  font-family: "Yidun Wordmark";
-  src: url("/fonts/wordmark.woff2") format("woff2");
-  font-weight: 500;
-  font-display: swap;
-  unicode-range: U+4E00, U+5403, U+5730, U+987F;
-}
-
 :root {
-  --font-wordmark: "Yidun Wordmark", var(--font-body);
-  --font-code: ui-monospace, monospace;
-  --tracking-display: -0.01em;
-  --text-section: clamp(2rem, 1.6vw + 1.25rem, 2.75rem);
-  --text-hero: clamp(2.25rem, 3.9vw, 3.75rem);
+  --nav-height: 76px;
+  --text-hero: clamp(2.25rem, 2.2vw + 1.1rem, 3.25rem);
+  --text-section: clamp(2.5rem, 2vw + 1.5rem, 3.5rem);
+  --text-post-title: clamp(2rem, 1.6vw + 1rem, 2.75rem);
   --text-reading: 1.125rem;
-  --nav-height: 80px;
+  --scroll-height: 26rem;
+  --slip-height: 15rem;
+  --note-height: 24rem;
 }
 
 body {
@@ -42,10 +36,7 @@ body {
 
 h1, h2, h3 {
   max-width: none;
-}
-
-.lead {
-  color: var(--color-ink-2);
+  font-weight: 400;
 }
 
 .skip {
@@ -63,31 +54,20 @@ h1, h2, h3 {
 }
 
 .rule--double {
-  box-sizing: content-box;
-  height: 2px;
+  height: 0;
   margin: 0;
   border: 0;
-  border-block: var(--rule-hair) solid var(--color-rule-2);
-}
-
-.grid-12 {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  column-gap: var(--gap-columns);
+  border-top: var(--rule-hair) solid var(--color-rule);
 }
 
 .agate {
   color: var(--color-muted);
   font-size: var(--text-sm);
-  font-weight: 500;
   font-variant-numeric: tabular-nums;
-  white-space: nowrap;
 }
 
-/* Photographs: square, a hairline frame, a caption beneath */
-.photo {
-  margin: 0;
-  border: var(--rule-hair) solid var(--color-rule);
+.lead {
+  color: var(--color-ink-2);
 }
 
 figure {
@@ -95,11 +75,34 @@ figure {
 }
 
 figcaption {
-  padding-top: var(--space-xs);
+  margin-top: var(--space-xs);
   color: var(--color-muted);
   font-size: var(--text-sm);
-  font-weight: 500;
-  line-height: 1.4;
+}
+
+/* The mist: every photograph in a slot is washed toward the wall's colour, fog at its head and its foot. */
+.photo > img {
+  filter: grayscale(0.62) contrast(0.8) brightness(1.1);
+}
+
+.photo::before,
+.photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.photo::before {
+  background: var(--color-paper);
+  opacity: 0.26;
+}
+
+.photo::after {
+  background:
+    linear-gradient(to bottom, var(--color-paper) 0%, var(--color-mist) 30%),
+    linear-gradient(to top, var(--color-paper) 0%, var(--color-mist) 44%);
 }
 
 /* ---------- controls ---------- */
@@ -109,22 +112,17 @@ figcaption {
   align-items: center;
   min-height: 48px;
   padding: 0 var(--space-lg);
-  border: 0;
-  border-radius: 0;
-  background: none;
-  font: 700 1.0625rem/1 var(--font-display);
+  border: var(--rule-hair) solid var(--color-ink);
+  background: var(--color-ink);
+  color: var(--color-paper);
+  font: 400 var(--text-md)/1 var(--font-body);
+  letter-spacing: 0.02em;
   white-space: nowrap;
   text-decoration: none;
-  cursor: pointer;
   transition: background-color var(--dur-short) var(--ease-out), transform var(--dur-micro) var(--ease-out);
 }
 
-.btn--primary {
-  background: var(--color-ink);
-  color: var(--color-paper);
-}
-
-.btn--primary:hover {
+.btn:hover {
   background: var(--color-ink-2);
 }
 
@@ -137,28 +135,37 @@ figcaption {
   outline-offset: 2px;
 }
 
-.btn:disabled,
 .btn[aria-disabled="true"] {
   opacity: 0.55;
   cursor: not-allowed;
   transform: none;
 }
 
-/* ---------- nav: the wordmark left, two words right, a double rule under ---------- */
+/* ---------- nav: the links at the left, the wordmark as a title slip at the right ---------- */
 
 .nav__bar {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
-  gap: var(--space-lg);
   min-height: var(--nav-height);
 }
 
 .wordmark {
   color: var(--color-ink);
-  font: 500 2.375rem/1 var(--font-wordmark);
+  font: 400 var(--text-xl)/1 var(--font-display);
+  letter-spacing: 0.12em;
   text-decoration: none;
-  white-space: nowrap;
+}
+
+.wordmark:hover {
+  color: var(--color-accent);
+}
+
+.wordmark:focus-visible,
+.footer__wordmark:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 4px;
 }
 
 .nav__links {
@@ -173,66 +180,120 @@ figcaption {
   display: inline-flex;
   align-items: center;
   min-height: 44px;
-  color: var(--color-ink);
-  font-weight: 500;
+  color: var(--color-ink-2);
+  text-decoration: none;
   white-space: nowrap;
-  text-decoration: underline;
-  text-decoration-color: transparent;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 0.4em;
-  transition: text-decoration-color var(--dur-short) var(--ease-out);
 }
 
-.nav__links a:hover,
+.nav__links a:hover {
+  color: var(--color-accent);
+}
+
 .nav__links a[aria-current="page"] {
+  color: var(--color-ink);
+  text-decoration: underline;
   text-decoration-color: var(--color-accent);
+  text-underline-offset: 0.4em;
 }
 
-.wordmark:focus-visible,
 .nav__links a:focus-visible {
   outline: 2px solid var(--color-focus);
   outline-offset: 2px;
 }
 
-/* ---------- home: the first screen ---------- */
+/* ---------- hero: Pingjiang in the rain, the line read top to bottom ---------- */
+
+.hero {
+  padding-block: var(--space-lg) var(--space-2xl);
+}
 
 .hero__grid {
   display: grid;
-  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
-  align-items: center;
-  column-gap: var(--space-3xl);
-  min-height: calc(100svh - var(--nav-height) - 4px);
-  padding-block: var(--space-xl);
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--gap-columns);
+  align-items: stretch;
+}
+
+.hero__figure {
+  grid-column: 1 / 10;
+  min-width: 0;
+}
+
+.photo--hero {
+  height: min(70svh, 640px);
+  min-height: 440px;
+}
+
+.photo--hero > img {
+  object-position: 42% 62%;
+}
+
+/* Read from the right: the line, then the inscription, then the slip that opens the latest essay. */
+.hero__text {
+  grid-column: 10 / 13;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: minmax(0, 1fr) auto;
+  justify-content: start;
+  column-gap: var(--space-md);
+  min-width: 0;
 }
 
 .hero__head {
+  grid-column: 3;
+  grid-row: 1;
+  writing-mode: vertical-rl;
+  color: var(--color-ink);
   font-size: var(--text-hero);
-  line-height: 1.2;
+  line-height: 1.45;
+  letter-spacing: 0.12em;
+  text-wrap: nowrap;
+  animation: mist-in 0.8s var(--ease-out) both;
 }
 
-.hero .lead {
-  margin-top: var(--space-lg);
+/* Kai has no vertical forms for these marks, so they sit in the top right of their square by hand. */
+.hero__head .punc {
+  display: inline-block;
+  transform: translate(0.4em, -0.5em);
 }
 
-.hero__actions {
-  margin-top: var(--space-xl);
+.hero__lead {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: start;
+  padding-top: var(--space-3xl);
+  writing-mode: vertical-rl;
+  font-size: var(--text-md);
+  line-height: 1.6;
+  letter-spacing: 0.08em;
+}
+
+.btn--slip {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: end;
+  min-height: 0;
+  min-width: 48px;
+  padding: var(--space-md) var(--space-sm);
+  writing-mode: vertical-rl;
+  letter-spacing: 0.16em;
 }
 
 .hero__season {
+  grid-column: 1 / -1;
+  grid-row: 2;
   margin-top: var(--space-lg);
 }
 
 .hero__season a {
   color: var(--color-ink-2);
-  text-decoration: underline;
-  text-decoration-color: var(--color-accent);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.3em;
+  font-size: var(--text-sm);
+  text-decoration-color: var(--color-rule);
 }
 
 .hero__season a:hover {
-  color: var(--color-ink);
-  text-decoration-thickness: 2px;
+  color: var(--color-accent);
+  text-decoration-color: var(--color-accent);
 }
 
 .hero__season a:focus-visible {
@@ -240,132 +301,117 @@ figcaption {
   outline-offset: 2px;
 }
 
-.photo--hero {
-  aspect-ratio: 1 / 1;
-  max-height: calc(100svh - var(--nav-height) - var(--space-3xl));
-  margin-inline-start: auto;
+@keyframes mist-in {
+  from {
+    opacity: 0;
+    filter: blur(6px);
+  }
 }
 
-.photo--hero > img {
-  object-position: 38% 50%;
-}
-
-/* ---------- the essays, newest first ---------- */
+/* ---------- essays: scrolls hung from the right ---------- */
 
 .essays {
-  padding-block: var(--section-gap-s) var(--section-gap);
+  padding-block: var(--section-gap-s);
 }
 
-.essays .stage-heading {
-  margin-bottom: var(--space-lg);
+.essays__grid {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap: var(--space-xl);
 }
 
-.index {
+.stage-heading {
+  color: var(--color-ink);
+  font-size: var(--text-section);
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+}
+
+.essays__head {
+  flex: 0 0 auto;
+  writing-mode: vertical-rl;
+  letter-spacing: 0.24em;
+}
+
+.scrolls {
+  display: flex;
+  direction: rtl;
+  flex: 1 1 auto;
+  min-width: 0;
   margin: 0;
   padding: 0;
+  overflow-x: auto;
   list-style: none;
-  border-top: var(--rule-hair) solid var(--color-rule-2);
+  border-right: var(--rule-hair) solid var(--color-rule-2);
+  scrollbar-width: thin;
 }
 
-.index li {
-  position: relative;
+.scroll {
+  direction: ltr;
+  flex: 1 0 auto;
+  border-left: var(--rule-hair) solid var(--color-rule);
 }
 
-.index .article-title {
+/* Each scroll reads from its right edge: the title, then the excerpt; the date sits level at the foot. */
+.scroll__link {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: minmax(0, 1fr) auto;
+  justify-content: end;
+  gap: var(--space-md) var(--space-sm);
+  height: var(--scroll-height);
+  padding: var(--space-lg) var(--space-md);
   color: var(--color-ink);
   text-decoration: none;
-  transition: color var(--dur-short) var(--ease-out);
+  transition: background-color var(--dur-short) var(--ease-out);
 }
 
-.index .article-title::after {
-  content: "";
-  position: absolute;
-  inset: 0;
+.scroll__link:hover {
+  background: var(--color-paper-2);
 }
 
-.index li:hover .article-title {
-  color: var(--color-accent);
+.scroll__link:active {
+  background: var(--color-paper-3);
 }
 
-.index .article-title:focus-visible {
+.scroll__link:focus-visible {
   outline: 2px solid var(--color-focus);
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
-.index__excerpt {
-  max-width: 30em;
+.scroll__title {
+  grid-column: 2;
+  grid-row: 1;
+  writing-mode: vertical-rl;
+  font-size: var(--text-lg);
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-wrap: wrap;
+}
+
+.scroll__excerpt {
+  grid-column: 1;
+  grid-row: 1;
+  writing-mode: vertical-rl;
+  max-width: none;
   color: var(--color-ink-2);
+  font-size: var(--text-md);
+  line-height: 1.75;
+  letter-spacing: 0.04em;
 }
 
-.index__lead {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  column-gap: var(--gap-columns);
-  align-items: center;
-  padding-block: var(--space-xl) var(--space-2xl);
-}
-
-.photo--lead {
-  grid-column: 1 / 6;
-  aspect-ratio: 3 / 2;
-}
-
-/* The essay itself says the screen is red, so the illustration keeps its colour here as it does in the post. */
-.photo--lead > img {
-  filter: none;
-}
-
-.index__body {
-  grid-column: 7 / 13;
-}
-
-/* A lead essay without a picture takes the photo's columns too. */
-.index__lead--text .index__body {
-  grid-column: 1 / 10;
-}
-
-.index__title--lead {
-  margin-top: var(--space-sm);
-  font-size: var(--text-3xl);
-  line-height: 1.15;
-}
-
-.index__lead .index__excerpt {
-  margin-top: var(--space-md);
-}
-
-.index__row {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  column-gap: var(--gap-columns);
-  align-items: baseline;
-  padding-block: var(--space-lg);
-  border-top: var(--rule-hair) solid var(--color-rule);
-}
-
-.index__row:last-child {
-  border-bottom: var(--rule-hair) solid var(--color-rule);
-}
-
-.index__row .index__title {
-  grid-column: 1 / 5;
-  line-height: 1.3;
-}
-
-.index__row .index__excerpt {
-  grid-column: 5 / 11;
-}
-
-.index__row .agate {
-  grid-column: 11 / 13;
+.scroll__date {
+  grid-column: 1 / -1;
+  grid-row: 2;
   justify-self: end;
+  white-space: nowrap;
 }
 
-/* ---------- 苏州的时令: one month set large, the twelve as ruled rows ---------- */
+/* ---------- 苏州的时令: twelve slips, 一月 at the right ---------- */
 
 .shiling {
   padding-block: var(--section-gap-s);
-  border-block: var(--rule-hair) solid var(--color-rule);
   background: var(--color-paper-2);
 }
 
@@ -377,11 +423,13 @@ figcaption {
 }
 
 .shiling__head {
-  grid-column: 1 / 6;
+  grid-column: 1 / 5;
+  min-width: 0;
 }
 
 .shiling-lede {
   margin-top: var(--space-md);
+  max-width: 24em;
 }
 
 .shiling-now {
@@ -390,13 +438,14 @@ figcaption {
 
 .shiling-month {
   color: var(--color-ink);
-  font: 700 clamp(4.5rem, 8vw, 8.5rem)/1 var(--font-display);
-  white-space: nowrap;
+  font: 400 clamp(3.5rem, 5vw, 5.5rem)/1 var(--font-display);
+  letter-spacing: 0.06em;
 }
 
 .shiling-food {
   margin-top: var(--space-md);
-  font: 700 var(--text-title)/1.3 var(--font-display);
+  font: 400 var(--text-xl)/1.3 var(--font-display);
+  letter-spacing: 0.04em;
 }
 
 .shiling-note {
@@ -405,49 +454,47 @@ figcaption {
 }
 
 .shiling-months {
+  grid-column: 5 / 13;
   display: grid;
-  grid-column: 7 / 13;
-  grid-template-rows: repeat(6, auto);
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-auto-flow: column;
-  column-gap: var(--gap-columns);
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  direction: rtl;
   margin: 0;
   padding: 0;
   list-style: none;
-  border-top: var(--rule-hair) solid var(--color-rule-2);
+  border-right: var(--rule-hair) solid var(--color-rule-2);
 }
 
 .shiling-months li {
-  border-bottom: var(--rule-hair) solid var(--color-rule);
+  direction: ltr;
+  min-width: 0;
 }
 
 .shiling-months button {
-  display: grid;
-  grid-template-columns: 4em minmax(0, 1fr);
-  align-items: center;
-  gap: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-xs);
   width: 100%;
-  min-height: 52px;
-  padding: var(--space-xs) var(--space-sm);
+  height: var(--slip-height);
+  padding: var(--space-md) var(--space-2xs);
   border: 0;
-  border-radius: 0;
+  border-left: var(--rule-hair) solid var(--color-rule);
   background: transparent;
   color: var(--color-ink);
-  text-align: left;
+  writing-mode: vertical-rl;
   cursor: pointer;
   transition: background-color var(--dur-short) var(--ease-out), color var(--dur-short) var(--ease-out);
 }
 
 .shiling-months .m {
-  font: 700 var(--text-lg)/1 var(--font-display);
+  font: 400 var(--text-lg)/1.2 var(--font-display);
+  letter-spacing: 0.1em;
 }
 
 .shiling-months .f {
-  overflow: hidden;
-  color: var(--color-muted);
-  font-size: var(--text-sm);
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  color: var(--color-ink-2);
+  font-size: var(--text-md);
+  line-height: 1.5;
 }
 
 .shiling-months button:hover {
@@ -464,12 +511,12 @@ figcaption {
 }
 
 .shiling-months button[aria-pressed="true"] {
-  background: var(--color-paper);
-  box-shadow: inset 3px 0 0 var(--color-accent);
+  background: var(--color-ink);
+  color: var(--color-paper);
 }
 
 .shiling-months button[aria-pressed="true"] .f {
-  color: var(--color-ink-2);
+  color: var(--color-paper-2);
 }
 
 .shiling-months button:disabled {
@@ -477,48 +524,66 @@ figcaption {
   cursor: not-allowed;
 }
 
-/* ---------- 写的人: the peaches beside the letter ---------- */
+/* ---------- 写的人: a note set top to bottom beside the peaches ---------- */
 
 .letter {
-  padding-block: var(--section-gap-l) var(--space-xl);
+  padding-block: var(--section-gap) var(--section-gap-s);
 }
 
 .letter__grid {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   column-gap: var(--gap-columns);
-  align-items: center;
+  align-items: end;
 }
 
 .letter__figure {
-  grid-column: 1 / 6;
+  grid-column: 10 / 13;
+  grid-row: 1;
+  min-width: 0;
 }
 
 .photo--letter {
-  aspect-ratio: 4 / 5;
-  max-height: 640px;
+  aspect-ratio: 9 / 16;
+  min-height: 440px;
 }
 
 .letter__text {
-  grid-column: 7 / 12;
+  grid-column: 1 / 10;
+  grid-row: 1;
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  height: var(--note-height);
+  writing-mode: vertical-rl;
+}
+
+.letter__text .stage-heading {
+  letter-spacing: 0.2em;
 }
 
 .stage-letter-avatar {
   width: 56px;
   height: 56px;
-  margin-top: var(--space-xl);
-  filter: grayscale(1);
+  border-radius: 50%;
+  filter: grayscale(1) contrast(1.1);
 }
 
 .letter__text p {
-  margin-top: var(--space-md);
-  font-size: var(--text-reading);
-  line-height: 1.85;
+  max-width: none;
+  color: var(--color-ink-2);
+  font-size: var(--text-lg);
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 .letter__text .stage-letter-sign {
-  margin-top: var(--space-xl);
-  font: 700 var(--text-xl)/1 var(--font-display);
+  align-self: flex-end;
+  margin-block-start: auto;
+  color: var(--color-ink);
+  font: 400 var(--text-xl)/1 var(--font-display);
+  text-orientation: upright;
 }
 
 /* ---------- a post ---------- */
@@ -530,34 +595,44 @@ figcaption {
 }
 
 .post__grid > * {
-  grid-column: 3 / 11;
+  grid-column: 2 / 9;
   min-width: 0;
 }
 
-.post-head {
-  padding-top: var(--space-2xl);
+.post__grid > .post-head {
+  position: sticky;
+  top: var(--space-xl);
+  grid-column: 10 / 13;
+  grid-row: 1 / span 3;
+  align-self: start;
+  justify-self: end;
 }
 
 #post-info {
-  max-width: calc(38 * var(--text-reading));
-  padding-bottom: var(--space-lg);
-  border-bottom: 4px double var(--color-rule-2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-lg);
+  padding-left: var(--space-lg);
+  border-left: var(--rule-hair) solid var(--color-rule-2);
 }
 
 .post-title {
-  max-width: 16em;
-  font-size: var(--text-display-s);
-  line-height: 1.15;
+  max-width: none;
+  writing-mode: vertical-rl;
+  font-size: var(--text-post-title);
+  line-height: 1.3;
+  letter-spacing: 0.08em;
+  text-wrap: wrap;
 }
 
 .byline {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-xs) var(--space-lg);
-  margin-top: var(--space-lg);
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-2xs);
   color: var(--color-muted);
   font-size: var(--text-sm);
-  font-weight: 500;
   font-variant-numeric: tabular-nums;
 }
 
@@ -566,14 +641,14 @@ figcaption {
 }
 
 .post {
-  padding-top: var(--space-2xl);
+  padding-block: var(--space-2xl) var(--section-gap-s);
 }
 
 .post-content {
   max-width: 38em;
   color: var(--color-ink);
   font-size: var(--text-reading);
-  line-height: 1.9;
+  line-height: 1.95;
 }
 
 .post-content p {
@@ -581,33 +656,25 @@ figcaption {
   margin-bottom: var(--space-md);
 }
 
-.post-content > p:first-child::first-letter {
-  float: left;
-  padding-right: var(--space-xs);
-  color: var(--color-ink);
-  font: 700 3.6em/0.95 var(--font-display);
-}
-
 .post-content hr {
+  width: var(--space-2xl);
   height: 0;
   margin: var(--space-2xl) 0;
   border: 0;
-  border-top: var(--rule-hair) solid var(--color-rule);
+  border-top: var(--rule-hair) solid var(--color-rule-2);
 }
 
 .post-content img {
   width: 100%;
   margin-block: var(--space-md);
-  border: var(--rule-hair) solid var(--color-rule);
 }
 
 .post-content a,
 .footer__credits a {
   color: var(--color-accent);
   text-decoration: underline;
-  text-decoration-color: var(--color-accent);
   text-decoration-thickness: 1px;
-  text-underline-offset: 0.16em;
+  text-underline-offset: 0.2em;
 }
 
 .post-content a:hover,
@@ -624,7 +691,7 @@ figcaption {
 .post-content code {
   padding: 0 var(--space-2xs);
   background: var(--color-paper-2);
-  font-family: var(--font-code);
+  font-family: var(--font-body);
   font-size: 0.9em;
 }
 
@@ -632,7 +699,7 @@ figcaption {
   display: grid;
   max-width: 38em;
   margin-top: var(--space-3xl);
-  border-top: 4px double var(--color-rule-2);
+  border-top: var(--rule-hair) solid var(--color-rule-2);
 }
 
 .pager {
@@ -647,16 +714,20 @@ figcaption {
 .pager__label {
   color: var(--color-muted);
   font-size: var(--text-sm);
-  font-weight: 500;
 }
 
 .pager__title {
-  font: 700 var(--text-title)/1.3 var(--font-display);
+  font: 400 var(--text-title)/1.4 var(--font-display);
+  letter-spacing: 0.04em;
   transition: color var(--dur-short) var(--ease-out);
 }
 
 .pager:hover .pager__title {
   color: var(--color-accent);
+}
+
+.pager:active .pager__title {
+  color: var(--color-ink-2);
 }
 
 .pager:focus-visible {
@@ -669,8 +740,6 @@ figcaption {
 .comments {
   max-width: 38em;
   margin-top: var(--space-3xl);
-  padding-top: var(--space-lg);
-  border-top: 4px double var(--color-rule-2);
 }
 
 .comments[hidden] {
@@ -679,7 +748,8 @@ figcaption {
 
 .comments__title {
   margin-bottom: var(--space-lg);
-  font: 700 var(--text-title)/1.3 var(--font-display);
+  font-size: var(--text-xl);
+  letter-spacing: 0.08em;
 }
 
 #waline {
@@ -693,7 +763,9 @@ figcaption {
   --waline-bg-color: var(--color-paper);
   --waline-bg-color-light: var(--color-paper-2);
   --waline-bg-color-hover: var(--color-paper-3);
-  --waline-border-color: var(--color-rule);
+  --waline-border-color: var(--color-muted);
+  --waline-info-font-size: var(--text-xs);
+  --waline-badge-font-size: var(--text-xs);
   --waline-disable-bg-color: var(--color-paper-2);
   --waline-disable-color: var(--color-muted);
   --waline-code-bg-color: var(--color-paper-2);
@@ -702,7 +774,7 @@ figcaption {
   --waline-info-bg-color: var(--color-paper-2);
   --waline-info-color: var(--color-muted);
   --waline-border: var(--rule-hair) solid var(--color-rule);
-  --waline-avatar-radius: 0;
+  --waline-avatar-radius: 50%;
   --waline-box-shadow: none;
   font-family: var(--font-body);
 }
@@ -716,50 +788,99 @@ figcaption {
   border-radius: var(--radius-pill);
 }
 
-/* ---------- archive: the same ruled rows ---------- */
-
-.archive-head {
-  padding-block: var(--space-3xl) var(--space-2xl);
+#waline .wl-header input {
+  min-height: 44px;
 }
 
-.archive-head h1 {
-  font-size: var(--text-display);
+#waline .wl-editor {
+  border-bottom: var(--rule-hair) solid var(--color-muted);
 }
 
-.archive-head .lead {
-  margin-top: var(--space-md);
+#waline .wl-btn {
+  min-height: 44px;
+  padding: 0 var(--space-md);
+}
+
+#waline .wl-power,
+#waline .wl-meta-head span,
+#waline .wl-text-number {
+  font-size: var(--text-xs);
+}
+
+/* ---------- archive ---------- */
+
+.archive {
+  padding-block: var(--space-2xl) var(--section-gap-s);
+}
+
+.archive__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--gap-columns);
+  align-items: start;
 }
 
 #archive {
-  padding-top: var(--space-xl);
-  border-top: 4px double var(--color-rule-2);
+  grid-column: 1 / 10;
+  grid-row: 1;
+  min-width: 0;
+}
+
+.archive-head {
+  grid-column: 10 / 13;
+  grid-row: 1;
+  justify-self: end;
+}
+
+#page-site-info {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap: var(--space-md);
+}
+
+.archive-head h1 {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: var(--text-hero);
+  line-height: 1.2;
+  letter-spacing: 0.16em;
+}
+
+.archive-head .lead {
+  padding-top: var(--space-3xl);
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: 0.06em;
 }
 
 .archive__year {
-  font-variant-numeric: tabular-nums;
+  padding-bottom: var(--space-md);
+  border-bottom: var(--rule-hair) solid var(--color-rule-2);
+  font-size: var(--text-xl);
+  letter-spacing: 0.06em;
 }
 
 .archive-list {
-  margin: var(--space-xl) 0 0;
+  margin: 0;
   padding: 0;
   list-style: none;
-  border-top: var(--rule-hair) solid var(--color-rule-2);
 }
 
 .archive-row {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  column-gap: var(--gap-columns);
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: baseline;
+  gap: var(--space-lg);
   padding-block: var(--space-lg);
   border-bottom: var(--rule-hair) solid var(--color-rule);
 }
 
 .archive-row .article-sort-item-title {
-  grid-column: 1 / 10;
   color: var(--color-ink);
-  font: 700 var(--text-title)/1.3 var(--font-display);
+  font: 400 var(--text-title)/1.4 var(--font-display);
+  letter-spacing: 0.04em;
   text-decoration: none;
   transition: color var(--dur-short) var(--ease-out);
 }
@@ -774,61 +895,59 @@ figcaption {
   color: var(--color-accent);
 }
 
+.archive-row .article-sort-item-title:active {
+  color: var(--color-ink-2);
+}
+
 .archive-row .article-sort-item-title:focus-visible {
   outline: 2px solid var(--color-focus);
   outline-offset: 2px;
 }
 
-.archive-row .agate {
-  grid-column: 10 / 13;
-  justify-self: end;
-}
-
-.archive {
-  padding-bottom: var(--section-gap-s);
-}
-
-/* ---------- footer: the wordmark as a mast ---------- */
+/* ---------- footer: a colophon beside the wordmark set top to bottom ---------- */
 
 .footer {
-  padding-block: var(--section-gap-s) var(--space-2xl);
+  padding-bottom: var(--space-2xl);
 }
 
 .footer .container {
-  container-type: inline-size;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: var(--space-2xl);
+}
+
+.footer .rule--double {
+  grid-column: 1 / -1;
+  margin-bottom: var(--space-xl);
 }
 
 .footer__wordmark {
-  display: block;
-  margin-top: var(--space-xl);
+  grid-column: 2;
+  grid-row: 2;
+  writing-mode: vertical-rl;
   color: var(--color-ink);
-  font: 500 16.3cqi/1 var(--font-wordmark);
+  font: 400 clamp(2.25rem, 3vw, 3rem)/1.1 var(--font-display);
+  letter-spacing: 0.14em;
   text-decoration: none;
-  white-space: nowrap;
 }
 
-.footer__wordmark:focus-visible,
-.footer__links a:focus-visible {
-  outline: 2px solid var(--color-focus);
-  outline-offset: 2px;
+.footer__wordmark:hover {
+  color: var(--color-accent);
 }
 
 .footer__grid {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: end;
   display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  column-gap: var(--gap-columns);
-  row-gap: var(--space-lg);
-  margin-top: var(--space-xl);
-  padding-top: var(--space-lg);
-  border-top: var(--rule-hair) solid var(--color-rule);
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: var(--space-md) var(--space-2xl);
   color: var(--color-muted);
   font-size: var(--text-sm);
-  line-height: 1.7;
 }
 
 .footer__links {
   display: flex;
-  grid-column: 1 / 4;
   gap: var(--space-lg);
   margin: 0;
   padding: 0;
@@ -836,110 +955,245 @@ figcaption {
 }
 
 .footer__links a {
-  color: var(--color-ink);
-  font-weight: 500;
-  text-decoration: underline;
-  text-decoration-color: transparent;
-  text-underline-offset: 0.3em;
-  transition: text-decoration-color var(--dur-short) var(--ease-out);
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--color-ink-2);
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .footer__links a:hover {
-  text-decoration-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.footer__links a:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
 }
 
 .footer__meta {
-  grid-column: 4 / 8;
+  display: grid;
+  gap: var(--space-2xs);
+  align-content: center;
 }
 
 .footer__credits {
-  grid-column: 8 / 13;
+  grid-column: 1 / -1;
+  max-width: 72ch;
 }
 
-/* ---------- under 60rem everything stacks in reading order ---------- */
+/* ---------- smaller screens: vertical lines turn horizontal where a column gets too narrow ---------- */
+
+@media (max-width: 72rem) {
+  .shiling__head {
+    grid-column: 1 / -1;
+  }
+
+  .shiling-months {
+    grid-column: 1 / -1;
+    margin-top: var(--space-2xl);
+  }
+}
 
 @media (max-width: 60rem) {
   :root {
     --nav-height: 64px;
   }
 
-  .hero__grid {
-    grid-template-columns: minmax(0, 1fr);
-    row-gap: var(--space-xl);
-    min-height: 0;
-    padding-block: var(--space-2xl) var(--space-xl);
-  }
-
-  .photo--hero {
-    aspect-ratio: 4 / 3;
-  }
-
-  .index__lead,
-  .index__row,
-  .shiling__grid,
+  .hero__grid,
   .letter__grid,
-  .post__grid,
-  .archive-row,
-  .footer__grid {
+  .post__grid {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .index__lead > *,
-  .index__lead--text .index__body,
-  .index__row > *,
-  .shiling__grid > *,
-  .letter__grid > *,
-  .post__grid > *,
-  .archive-row > *,
-  .footer__grid > *,
-  .index__row .index__title,
-  .index__row .index__excerpt,
-  .index__row .agate,
-  .archive-row .article-sort-item-title,
-  .archive-row .agate {
+  .hero__text,
+  .hero__figure,
+  .letter__figure,
+  .letter__text,
+  .post__grid > * {
     grid-column: 1 / -1;
   }
 
-  .index__body {
-    margin-top: var(--space-lg);
+  .hero__figure {
+    grid-row: 1;
+    margin-bottom: var(--space-lg);
   }
 
-  .index__row .index__excerpt {
-    margin-top: var(--space-xs);
+  .hero__text {
+    grid-row: 2;
+    justify-content: end;
   }
 
-  .index__row .agate,
-  .archive-row .agate {
-    justify-self: start;
-    margin-top: var(--space-xs);
+  .photo--hero {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
   }
 
-  .shiling-months {
-    margin-top: var(--space-2xl);
+  .hero__head {
+    font-size: 2rem;
   }
 
   .letter__text {
-    margin-top: var(--space-xl);
+    grid-row: 1;
+    margin-bottom: var(--space-xl);
+  }
+
+  .post__grid > .post-head {
+    position: static;
+    grid-column: 1 / -1;
+    grid-row: auto;
+    justify-self: stretch;
+    margin-bottom: var(--space-2xl);
+  }
+
+  #post-info {
+    align-items: flex-start;
+    padding: 0 0 var(--space-lg);
+    border-left: 0;
+    border-bottom: var(--rule-hair) solid var(--color-rule);
+  }
+
+  .post-title {
+    writing-mode: horizontal-tb;
+  }
+
+  .byline {
+    flex-direction: row;
+    gap: var(--space-xs) var(--space-lg);
+  }
+
+  .archive__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #archive,
+  .archive-head {
+    grid-column: 1;
+    grid-row: auto;
+    justify-self: stretch;
+  }
+
+  .archive-head {
+    margin-bottom: var(--space-2xl);
+  }
+
+  #page-site-info {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .archive-head h1,
+  .archive-head .lead {
+    padding-top: 0;
+    writing-mode: horizontal-tb;
+    text-orientation: mixed;
+  }
+
+  .letter__figure {
+    grid-row: 2;
   }
 
   .photo--letter {
-    max-height: none;
+    min-height: 0;
   }
 }
 
-@media (max-width: 40rem) {
-  .wordmark {
-    font-size: 1.375rem;
+@media (max-width: 48rem) {
+  .essays__grid {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .essays__head {
+    writing-mode: horizontal-tb;
+    letter-spacing: 0.08em;
+  }
+
+  .scrolls {
+    flex-direction: column;
+    direction: ltr;
+    overflow: visible;
+    border-right: 0;
+    border-top: var(--rule-hair) solid var(--color-rule-2);
+  }
+
+  .scroll {
+    border-left: 0;
+    border-bottom: var(--rule-hair) solid var(--color-rule);
+  }
+
+  .scroll__link {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto;
+    justify-content: stretch;
+    gap: var(--space-xs);
+    height: auto;
+    padding: var(--space-lg) 0;
+  }
+
+  .scroll__title,
+  .scroll__excerpt,
+  .scroll__date {
+    grid-column: 1;
+    grid-row: auto;
+    justify-self: start;
+    writing-mode: horizontal-tb;
   }
 
   .shiling-months {
-    column-gap: var(--space-md);
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    row-gap: var(--space-md);
   }
 
   .shiling-months button {
+    height: 11rem;
+  }
+
+  .shiling-months .f {
+    font-size: var(--text-sm);
+  }
+
+  .letter__text {
+    height: auto;
+    justify-self: stretch;
+    writing-mode: horizontal-tb;
+    gap: var(--space-md);
+  }
+
+  .letter__text .stage-letter-sign {
+    align-self: flex-start;
+    text-orientation: mixed;
+  }
+
+  .footer .container {
     grid-template-columns: minmax(0, 1fr);
-    gap: var(--space-3xs);
-    align-content: center;
-    padding-block: var(--space-xs);
+  }
+
+  .footer__wordmark {
+    grid-column: 1;
+    grid-row: 2;
+    margin-bottom: var(--space-xl);
+    writing-mode: horizontal-tb;
+  }
+
+  .footer__grid {
+    grid-row: 3;
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__head {
+    animation: none;
+  }
+
+  .btn,
+  .scroll__link,
+  .shiling-months button,
+  .pager__title,
+  .archive-row .article-sort-item-title {
+    transition: none;
   }
 }
