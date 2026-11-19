@@ -1,0 +1,67 @@
+[
+ {
+  "footer": "colophon beside a vertical wordmark",
+  "axes": "light/handwritten/cool",
+  "signature": "饭一顿一顿地吃，日子一天一天地过。 set top to bottom beside a rain-washed Pingjiang",
+  "prompt": "a light personal essay blog from Suzhou about food, the seasons and work, read the latest essay, in a 江南烟雨 style",
+  "photos": [
+   "banner.jpg",
+   "peach.jpg"
+  ],
+  "imagery": "photographs, the user's 2 in a cool mist, post illustration in colour",
+  "theme": "custom",
+  "hero": "misted Pingjiang photo beside the line set vertically, action as a vertical slip",
+  "depth": "full",
+  "nav": "links left, wordmark right as a title slip",
+  "date": "2026-11-19",
+  "sections": [
+   "Hero (misted Pingjiang, vertical line)",
+   "Scrolls (five essays hung right to left)",
+   "Band (twelve month slips)",
+   "Note (the letter set vertically beside a narrow peach scroll)",
+   "Footer (colophon, vertical wordmark)"
+  ],
+  "fingerprint": "hanging-scrolls/split-vertical/edge-reversed/colophon/scrolls+slips+note/restrained",
+  "mode": "redesign",
+  "entry": "hero",
+  "waived": [
+   "39b",
+   "49b",
+   "77",
+   "79"
+  ],
+  "scope": "site",
+  "shape": "Hanging scrolls"
+ },
+ {
+  "waived": [
+   "44c"
+  ],
+  "theme": "newsprint",
+  "shape": "Index-First",
+  "imagery": "photographs, user 2 in mono, post illustration in colour",
+  "photos": [
+   "banner.jpg",
+   "peach.jpg"
+  ],
+  "entry": "hero",
+  "sections": [
+   "Hero (Pingjiang, Stage)",
+   "Index (essays, lead row with picture)",
+   "Band (时令 month picker as ruled rows)",
+   "Split (peaches beside the letter)",
+   "Footer (mast)"
+  ],
+  "axes": "light/slab-serif/warm",
+  "nav": "edge-aligned",
+  "depth": "full",
+  "signature": "the wordmark 一顿一顿地吃 as a newspaper mast",
+  "scope": "site",
+  "hero": "Stage (/), Banner (posts, archives)",
+  "footer": "mast",
+  "fingerprint": "index-first/stage/edge-aligned/mast/rows+switcher+split/restrained",
+  "prompt": "a light personal essay blog from Suzhou about food, the seasons and work, read the latest essay",
+  "mode": "redesign",
+  "date": "2026-11-13"
+ }
+]

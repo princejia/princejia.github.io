@@ -1,0 +1,52 @@
+2026\11\13\m365-outage\index.html
+  FAIL 26a :1 no :focus-visible styling anywhere | fix: A focus ring at 3:1 or better, instant
+  FAIL 34 :1 no overflow-x: clip on html and body | fix: overflow-x: clip on both html and body
+  FAIL 44d :1 [1920px] hero text starts 8px from the edge at 1920 | fix: Cap the container at 1360 to 1520px and centre it
+  FAIL 44d :1 [1920px] 6 text blocks run wider than 1600px at 1920 (first: p "北京时间两点半前不久，Downdetector 上关于 ") | fix: Cap the container; hold the measure
+  FAIL 76 :1 [1440px] an image that does not load: m365-outage.jpg | fix: Point it at a file that exists, make it a data-slot placeholder, or remove it
+  REFLEX 26b :1 no :active styling anywhere | fix: All eight states; guard: not a form control, no aria-disabled anywhere
+  REFLEX 44c :1 [1440px] hero ends at 251px of a 900px screen | fix: Fill the first screen with the visual or the headline, not with copy
+  REFLEX 59 :1 [1440px] smallest gap between sections is 18px (gaps: 18) | fix: 120px or more between sections, by the --section-gap steps
+  WARN 77 :1 [1440px] 2 sections, hero and footer included | fix: A landing strip, not a page: six to nine sections, five on a thin prompt (layout.md § 3)
+  WARN render :1 the shots show a fallback: fonts or stylesheets did not load (wordmark.woff2, custom.css) | fix: Recapture when the host answers or the path is right; never review or sign off a fallback face
+archives\index.html
+  FAIL 26a :1 no :focus-visible styling anywhere
+  FAIL 34 :1 no overflow-x: clip on html and body
+  FAIL 44d :1 [1920px] hero text starts 8px from the edge at 1920
+  REFLEX 26b :1 no :active styling anywhere
+  REFLEX 44c :1 [1440px] hero ends at 251px of a 900px screen
+  REFLEX 59 :1 [1440px] smallest gap between sections is 26px (gaps: 26)
+  REFLEX 78 :1 [1440px] section heads render at 24px under a 32px hero head | fix: h2 at --text-section (about 52px at 1440), item titles at --text-title (layout.md § 2)
+  WARN 77 :1 [1440px] 2 sections, hero and footer included
+  WARN render :1 the shots show a fallback: fonts or stylesheets did not load (wordmark.woff2, custom.css)
+index.html
+  FAIL 26a :1 no :focus-visible styling anywhere
+  FAIL 34 :1 no overflow-x: clip on html and body
+  FAIL 44d :1 [1920px] hero text starts 8px from the edge at 1920
+  FAIL 76 :1 [1440px] an image that does not load: avatar.png
+  REFLEX 26b :1 no :active styling anywhere
+  REFLEX 26b :1 no :disabled styling anywhere
+  REFLEX 39b :1 [1440px] control height outside 44 to 52px: button 25px, button 25px, button 25px | fix: Marketing controls stand 44 to 52px; app UI 32 to 40px with a 44px hit target
+  REFLEX 44c :1 [1440px] hero ends at 417px of a 900px screen
+  REFLEX 59 :1 [1440px] smallest gap between sections is 16px (gaps: 20, 16, 26)
+  REFLEX 77 :1 [1440px] 1 thin section: "苏州的时令" (45% wide) | fix: Widen the body to ten of twelve columns and give it mass: a visual 300px tall or more, a set of three across, rows, or a statement (layout.md § 4 and § 5)
+  REFLEX 78 :1 [1440px] section heads render at 24px under a 32px hero head
+  WARN 77 :1 [1440px] 4 sections, hero and footer included
+  WARN F18 :1 [375px] slot "hero" renders at 279 x 0px on a phone | fix: The slot collapsed: give it width: 100% and an aspect-ratio in the stacked layout
+  WARN F18 :1 [1440px] slot "hero" renders at 1344 x 0px | fix: The slot collapsed: give it a width from its track and a real aspect-ratio, never a percentage of a shrink-to-fit parent
+  WARN render :1 the shots show a fallback: fonts or stylesheets did not load (wordmark.woff2, custom.css)
+.hallmark\before.json
+  WARN kept :1 figures gone or reworded since the before record: 420262026-11-13 | fix: Restore it, or record it in the stamp: /* Hallmark · reworded "<old>" to "<new>" · <the gate that named it> */ or dropped <item> · <the reason>
+  WARN kept :1 images gone or reworded since the before record: banner.jpg, peach.jpg, avatar.png
+  WARN kept :1 ids gone or reworded since the before record: blog-info, body-wrap, go-up, menu-mask, menus, readmode, rightside, rightside-config and 8 more
+http://localhost:4173/2026/11/13/m365-outage/
+  WAIVED 44c :1 [1440px] hero ends at 293px of a 900px screen
+  DISMISSED 77 :1 [1440px] 2 sections, hero and footer included
+http://localhost:4173/archives/
+  WAIVED 44c :1 [1440px] hero ends at 379px of a 900px screen
+  DISMISSED 77 :1 [1440px] 2 sections, hero and footer included
+http://localhost:4173/
+  DISMISSED 77 :1 [1440px] 4 sections, hero and footer included
+sloplint: 12 FAIL, 14 REFLEX, 11 WARN, 2 WAIVED, 3 DISMISSED across 4 file(s) and 3 URL(s).
+kept: links 20/28 (8 dropped on record), headings 4/5 (1 dropped on record), figures 2/3; before 29 FAIL, 72 REFLEX, now 12 FAIL, 14 REFLEX
+compare: .hallmark\compare.html, 2026\11\13\m365-outage\.hallmark\compare.html, archives\.hallmark\compare.html shows before and after side by side

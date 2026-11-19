@@ -1,0 +1,21 @@
+render tier: 20 screenshots in D:\proj\princejiablog\.hallmark\shots (1280x800, 1440x900, 1920x1080 folds; 1440 and 375 full pages)
+http://127.0.0.1:4173/
+  WAIVED 39b :1 [1440px] control height outside 44 to 52px: button 240px, button 240px, button 240px
+  WAIVED 77 :1 [1440px] 1 thin section: "写的人" (62% wide)
+  DISMISSED 77 :1 [1440px] 4 sections, hero and footer included
+  DISMISSED F17 :1 [1440px] "今天是十一月十八号，苏州秋假的最后一天。十四号，我们和朋" squeezed to 84px wide over 12 lines (p.scroll__excerpt)
+http://127.0.0.1:4173/archives/
+  WAIVED 49b :1 [320px] link "《Exchange 打不开了》" wraps to 2 lines (a.article-sort-item-title)
+  WAIVED 49b :1 [320px] link "《给聊天记录找个地方》" wraps to 2 lines (a.article-sort-item-title)
+  WAIVED 49b :1 [320px] link "《有朋友惦记着，真好》" wraps to 2 lines (a.article-sort-item-title)
+  WAIVED 79 :1 [1440px] 345px of nothing between the hero's last content (y 435) and the next section
+  DISMISSED 77 :1 [1440px] 2 sections, hero and footer included
+http://127.0.0.1:4173/2026/11/18/qiujia/
+  WAIVED 79 :1 [1440px] 463px of nothing between the hero's last content (y 437) and the fold
+  DISMISSED 77 :1 [1440px] 2 sections, hero and footer included
+http://127.0.0.1:4173/2026/11/13/m365-outage/
+  DISMISSED 77 :1 [1440px] 2 sections, hero and footer included
+css\custom.css
+  DISMISSED F4 :513 2 filled primary-button recipes: .btn + .shiling-months button[aria-pressed="true"]
+  NOTE waive :1 5 reflex gates waived (39b, 49b, 78, 77, 79): that is a house style, no… | fix: Lock it into a design.md so later pages inherit it instead of re-arguing it
+sloplint: 0 FAIL, 0 WARN, 7 WAIVED, 6 DISMISSED, 1 NOTE across 1 file(s) and 4 URL(s).

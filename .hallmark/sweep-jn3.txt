@@ -1,0 +1,18 @@
+render tier: 15 screenshots in D:\proj\princejiablog\.hallmark\shots (1280x800, 1440x900, 1920x1080 folds; 1440 and 375 full pages)
+http://127.0.0.1:4173/
+  WAIVED 39b :1 [1440px] control height outside 44 to 52px: button 240px, button 240px, button 240px
+  DISMISSED 77 :1 [1440px] 4 sections, hero and footer included
+  DISMISSED F17 :1 [1440px] "今天是十一月十八号，苏州秋假的最后一天。十四号，我们和朋" squeezed to 84px wide over 13 lines (p.scroll__excerpt)
+http://127.0.0.1:4173/2026/11/18/qiujia/
+  WAIVED 39b :1 [1440px] control height outside 44 to 52px: button.wl-btn 58px, button.primary 58px
+  WAIVED 78 :1 [1440px] section heads render at 25px under a 52px hero head
+  DISMISSED 77 :1 [1440px] 2 sections, hero and footer included
+http://127.0.0.1:4173/archives/
+  WAIVED 49b :1 [320px] link "《Exchange 打不开了》" wraps to 2 lines (a.article-sort-item-title)
+  WAIVED 49b :1 [320px] link "《给聊天记录找个地方》" wraps to 2 lines (a.article-sort-item-title)
+  WAIVED 49b :1 [320px] link "《有朋友惦记着，真好》" wraps to 2 lines (a.article-sort-item-title)
+  WAIVED 78 :1 [1440px] section heads render at 25px under a 49px hero head
+  DISMISSED 77 :1 [1440px] 2 sections, hero and footer included
+css\custom.css
+  DISMISSED F4 :500 2 filled primary-button recipes: .btn + .shiling-months button[aria-pressed="true"]
+sloplint: 0 FAIL, 0 WARN, 7 WAIVED, 5 DISMISSED across 1 file(s) and 3 URL(s).

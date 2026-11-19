@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "skills": {
+    "hallmark": {
+      "source": "Nutlope/hallmark",
+      "sourceType": "github",
+      "skillPath": "skills/hallmark/SKILL.md",
+      "computedHash": "e5d4ee5cf0af2dcc81a23ef49b587fbfd71236ff9f9df9da12d3bf347e26e572"
+    },
+    "last30days": {
+      "source": "mvanhorn/last30days-skill",
+      "commit": "a854f3bcb2c4344d7498426d653378510f8b253a",
+      "sourceType": "github",
+      "skillPath": "skills/last30days/SKILL.md",
+      "computedHash": "f3d5e066bca992aaffd650d2203f80a5f484116d9c0963996dbf2304e6110f77"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+render tier: 30 screenshots in D:\proj\princejiablog\.hallmark\shots (1280x800, 1440x900, 1920x1080 folds; 1440 and 375 full pages)
+2026\11\18\qiujia\index.html
+  FAIL 26a :1 no :focus-visible styling anywhere | fix: A focus ring at 3:1 or better, instant
+  FAIL 34 :1 no overflow-x: clip on html and body | fix: overflow-x: clip on both html and body
+  FAIL 44d :1 [1920px] hero text starts 8px from the edge at 1920 | fix: Cap the container at 1360 to 1520px and centre it
+  FAIL 44d :1 [1920px] 2 text blocks run wider than 1600px at 1920 (first: p "别的演出我们没有都看。攻略上还写着：王婆说媒，是逗乐的，") | fix: Cap the container; hold the measure
+  REFLEX 26b :1 no :active styling anywhere | fix: All eight states; guard: not a form control, no aria-disabled anywhere
+  REFLEX 44c :1 [1440px] hero ends at 251px of a 900px screen | fix: Fill the first screen with the visual or the headline, not with copy
+  REFLEX 59 :1 [1440px] smallest gap between sections is 18px (gaps: 18) | fix: 120px or more between sections, by the --section-gap steps
+  REFLEX 79 :1 [1440px] 649px of nothing between the hero's last content (y 251) and the fold | fix: Centre the content in the screen and grow the visual or the head (layout.md § 6); never fill it with copy
+  WARN 77 :1 [1440px] 2 sections, hero and footer included | fix: A landing strip, not a page: six to nine sections, five on a thin prompt (layout.md § 3)
+  WARN render :1 the shots show a fallback: fonts or stylesheets did not load (custom.css) | fix: Recapture when the host answers or the path is right; never review or sign off a fallback face
+archives\index.html
+  FAIL 26a :1 no :focus-visible styling anywhere
+  FAIL 34 :1 no overflow-x: clip on html and body
+  FAIL 44d :1 [1920px] hero text starts 8px from the edge at 1920
+  REFLEX 26b :1 no :active styling anywhere
+  REFLEX 44c :1 [1440px] hero ends at 251px of a 900px screen
+  REFLEX 59 :1 [1440px] smallest gap between sections is 26px (gaps: 26)
+  REFLEX 79 :1 [1440px] 221px of nothing between the hero's last content (y 251) and the next section
+  WARN 77 :1 [1440px] 2 sections, hero and footer included
+  WARN render :1 the shots show a fallback: fonts or stylesheets did not load (custom.css)
+index.html
+  FAIL 26a :1 no :focus-visible styling anywhere
+  FAIL 34 :1 no overflow-x: clip on html and body
+  FAIL 44d :1 [1920px] hero text starts 8px from the edge at 1920
+  FAIL 76 :1 [1440px] an image that does not load: avatar.png | fix: Point it at a file that exists, make it a data-slot placeholder, or remove it
+  REFLEX 26b :1 no :active styling anywhere
+  REFLEX 26b :1 no :disabled styling anywhere
+  REFLEX 39b :1 [1440px] control height outside 44 to 52px: button 25px, button 25px, button 25px | fix: Marketing controls stand 44 to 52px; app UI 32 to 40px with a 44px hit target
+  REFLEX 44c :1 [1440px] hero ends at 417px of a 900px screen
+  REFLEX 59 :1 [1440px] smallest gap between sections is 16px (gaps: 20, 16, 26)
+  REFLEX 77 :1 [1440px] 1 thin section: "苏州的时令" (45% wide) | fix: Widen the body to ten of twelve columns and give it mass: a visual 300px tall or more, a set of three across, rows, or a statement (layout.md § 4 and § 5)
+  REFLEX 78 :1 [1440px] section heads render at 24px under a 32px hero head | fix: h2 at --text-section (about 52px at 1440), item titles at --text-title (layout.md § 2)
+  WARN 77 :1 [1440px] 4 sections, hero and footer included
+  WARN F18 :1 [375px] slot "hero" renders at 279 x 0px on a phone | fix: The slot collapsed: give it width: 100% and an aspect-ratio in the stacked layout
+  WARN F18 :1 [1440px] slot "hero" renders at 1344 x 0px | fix: The slot collapsed: give it a width from its track and a real aspect-ratio, never a percentage of a shrink-to-fit parent
+  WARN F26 :1 [375px] "《Exchange 打不开了》 北京时间十一月十三号凌晨两点不到" leaves one word on its last line; "《给聊天记录找个地方》 上个月我写《十月》，往前翻了很多聊天记录" leaves … | fix: text-wrap: balance on heads and pretty on body copy, or rewrite the line; a <br> goes only between phrases and is checked at 375
+  WARN render :1 the shots show a fallback: fonts or stylesheets did not load (custom.css)
+http://127.0.0.1:4173/
+  WAIVED 39b :1 [1440px] control height outside 44 to 52px: button 240px, button 240px, button 240px
+  WAIVED 77 :1 [1440px] 1 thin section: "写的人" (62% wide)
+  DISMISSED 77 :1 [1440px] 4 sections, hero and footer included
+  DISMISSED F17 :1 [1440px] "今天是十一月十八号，苏州秋假的最后一天。十四号，我们和朋" squeezed to 84px wide over 12 lines (p.scroll__excerpt)
+http://127.0.0.1:4173/archives/
+  WAIVED 49b :1 [320px] link "《Exchange 打不开了》" wraps to 2 lines (a.article-sort-item-title)
+  WAIVED 49b :1 [320px] link "《给聊天记录找个地方》" wraps to 2 lines (a.article-sort-item-title)
+  WAIVED 49b :1 [320px] link "《有朋友惦记着，真好》" wraps to 2 lines (a.article-sort-item-title)
+  WAIVED 79 :1 [1440px] 345px of nothing between the hero's last content (y 435) and the next section
+  DISMISSED 77 :1 [1440px] 2 sections, hero and footer included
+http://127.0.0.1:4173/2026/11/18/qiujia/
+  WAIVED 79 :1 [1440px] 463px of nothing between the hero's last content (y 437) and the fold
+  DISMISSED 77 :1 [1440px] 2 sections, hero and footer included
+css\custom.css
+  DISMISSED F4 :512 2 filled primary-button recipes: .btn + .shiling-months button[aria-pressed="true"]
+  NOTE waive :1 4 reflex gates waived (39b, 49b, 77, 79): that is a house style, not a … | fix: Lock it into a design.md so later pages inherit it instead of re-arguing it
+sloplint: 11 FAIL, 15 REFLEX, 9 WARN, 7 WAIVED, 5 DISMISSED, 1 NOTE across 4 file(s) and 3 URL(s).
+kept: links 31/31, fields 6/6, headings 12/12, figures 2/2; before 12 FAIL, 17 REFLEX, now 11 FAIL, 15 REFLEX
+compare: .hallmark\compare.html, archives\.hallmark\compare.html, 2026\11\18\qiujia\.hallmark\compare.html shows before and after side by side
